@@ -40,4 +40,24 @@ public class AuthorService {
         author.setCountry(country);
         return authorRepository.save(author);
     }
+
+    public Author updateAuthor(Long id, AuthorDto dto) {
+        Author author = authorRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Author not found with id: " + id));
+
+        Country country = countryRepository.findById(dto.getCountryId())
+                .orElseThrow(() -> new ResourceNotFoundException("Country not found with id: " + dto.getCountryId()));
+
+        author.setName(dto.getName());
+        author.setSurname(dto.getSurname());
+        author.setCountry(country);
+        return authorRepository.save(author);
+    }
+
+    public void deleteAuthor(Long id) {
+        if (!authorRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Author not found with id: " + id);
+        }
+        authorRepository.deleteById(id);
+    }
 }
