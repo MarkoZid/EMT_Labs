@@ -24,3 +24,28 @@ VALUES (NOW(), NOW(), 'Harry Potter', 'FANTASY', 2, 'GOOD', 10);
 
 INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
 VALUES (NOW(), NOW(), 'The Shining', 'THRILER', 3, 'GOOD', 3);
+
+INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
+VALUES (NOW(), NOW(), 'book 4', 'THRILER', 3, 'GOOD', 3);
+
+INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
+VALUES (NOW(), NOW(), 'Book 5', 'THRILER', 3, 'GOOD', 3);
+
+INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
+VALUES (NOW(), NOW(), 'Book 6', 'THRILER', 3, 'GOOD', 3);
+
+INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
+VALUES (NOW(), NOW(), 'Book 7', 'THRILER', 3, 'GOOD', 3);
+
+INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
+VALUES (NOW(), NOW(), 'Book 8', 'THRILER', 3, 'GOOD', 3);
+
+INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
+VALUES (NOW(), NOW(), 'Book 9', 'THRILER', 3, 'GOOD', 3);
+
+INSERT INTO book (created_at, updated_at, name, category, author_id, state, available_copies)
+VALUES (NOW(), NOW(), 'Book 10', 'THRILER', 3, 'GOOD', 3);
+
+
+
+
